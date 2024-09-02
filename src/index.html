@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./output.css">
+  <title>Frontend Mentor | [Challenge Name Here]</title>
+</head>
+
+<body class="font-inter text-very-dark-blue dark:bg-very-dark-blue">
+  <div class="absolute w-full h-60 bg-very-pale-blue dark:bg-dark-blue rounded-b-3xl">
+
+  </div>
+  <div class="flex flex-col gap-10 w-full px-6 xs:px-8 py-10 max-w-[75rem] absolute left-1/2 -translate-x-1/2">
+    <div class="flex flex-col lg:flex-row lg:justify-between gap-6">
+      <div
+        class="border-b border-b-very-dark-blue dark:border-light-grayish-blue lg:border-none lg:pb-0 pb-7 flex flex-col gap-2">
+        <h1 class="text-2xl xs:text-3xl font-bold dark:text-white">Social Media Dashboard</h1>
+        <p class="font-bold text-dark-grayish-blue dark:text-desaturated-blue">Total Followers: 23,004</p>
+      </div>
+      <div class="flex justify-between lg:justify-normal lg:gap-4 lg:items-center">
+        <span class="text-toggle-light-blue font-bold">Dark Mode</span>
+        <div id="toggle-handler" class="relative h-fit cursor-pointer rounded-full">
+          <span id="toggle-circle"
+            class="top-1 right-1 w-7 h-7 rounded-full bg-light-grayish-blue absolute dark:right-[2.5rem] dark:bg-dark-blue transition-[right] duration-200 ease-in-out"></span>
+          <input type="checkbox" name="" id="toggle"
+            class="appearance-none w-18 h-9 bg-toggle-light-blue dark:bg-gradient-to-tr dark:from-toggle-blue dark:to-toggle-lime-green rounded-full">
+        </div>
+      </div>
+    </div>
+    <div id="user-media-followers" class="grid md:grid-cols-2 xl:grid-cols-4 gap-6">
+      <div
+        class="flex flex-col dark:hover:bg-heavy-dark-blue hover:bg-heavy-black cursor-pointer dark:bg-dark-desaturated-blue items-center w-full bg-light-grayish-blue py-8 gap-8 xl:gap-6 border-t-4 border-t-facebook rounded-md">
+        <div class="flex gap-4">
+          <img class="w-[24px]" src="./images/icon-facebook.svg" alt="facebook icon">
+          <span class="text-dark-grayish-blue dark:text-desaturated-blue font-semibold">@nathanf</span>
+        </div>
+        <div class="text-center">
+          <h1 class="text-6xl xs:text-7xl xl:text-6xl dark:text-white font-bold">1987</h1>
+          <span
+            class="tracking-widest xs:tracking-[0.325rem] xl:tracking-[0.2rem] text-xl xl:text-base font-light text-dark-grayish-blue dark:text-desaturated-blue">FOLLOWERS</span>
+        </div>
+        <div class="flex items-center gap-2">
+          <img class="w-3 h-1.5" src="./images/icon-up.svg" alt="up icon">
+          <span class="text-black dark:text-white font-semibold">12 Today</span>
+        </div>
+      </div>
+
+      <div
+        class="flex flex-col dark:hover:bg-heavy-dark-blue hover:bg-heavy-black cursor-pointer dark:bg-dark-desaturated-blue items-center w-full bg-light-grayish-blue py-8 gap-8 xl:gap-6 border-t-4 border-t-twitter rounded-md">
+        <div class="flex gap-4">
+          <img class="w-6 h-[1.275rem]" src="./images/icon-twitter.svg" alt="twitter icon">
+          <span class="text-dark-grayish-blue dark:text-desaturated-blue font-semibold">@nathanf</span>
+        </div>
+        <div class="text-center">
+          <h1 class="text-6xl xs:text-7xl xl:text-6xl dark:text-white font-bold">1044</h1>
+          <span
+            class="tracking-widest xs:tracking-[0.325rem] xl:tracking-[0.2rem] text-xl xl:text-base font-light text-dark-grayish-blue dark:text-desaturated-blue">FOLLOWERS</span>
+        </div>
+        <div class="flex items-center gap-2">
+          <img class="w-3 h-1.5" src="./images/icon-up.svg" alt="up icon">
+          <span class="text-lime-green font-semibold">99 Today</span>
+        </div>
+      </div>
+
+      <div
+        class="flex flex-col dark:hover:bg-heavy-dark-blue hover:bg-heavy-black cursor-pointer dark:bg-dark-desaturated-blue items-center w-full bg-light-grayish-blue py-8 gap-8 xl:gap-6 top-1 relative  before:absolute before:w-full before:h-3 before:-top-1 before:bg-gradient-to-l before:to-instagram-orange before:from-instagram-pink before:-z-10 before:rounded-md rounded-t-sm rounded-b-md">
+        <div class="flex gap-4">
+          <img class="w-[24px]" src="./images/icon-instagram.svg" alt="insticon-instagram.svg icon">
+          <span class="text-dark-grayish-blue dark:text-desaturated-blue font-semibold">@realnathanf</span>
+        </div>
+        <div class="grid gap-2 text-center">
+          <h1 class="text-6xl xs:text-7xl xl:text-6xl dark:text-white font-bold">11k</h1>
+          <span
+            class="tracking-widest xs:tracking-[0.325rem] xl:tracking-[0.2rem] text-xl xl:text-base font-light text-dark-grayish-blue dark:text-desaturated-blue">FOLLOWERS</span>
+        </div>
+        <div class="flex items-center gap-2">
+          <img class="w-3 h-1.5" src="./images/icon-up.svg" alt="up icon">
+          <span class="text-lime-green font-semibold">1099 Today</span>
+        </div>
+      </div>
+
+      <div
+        class="flex flex-col dark:hover:bg-heavy-dark-blue hover:bg-heavy-black cursor-pointer dark:bg-dark-desaturated-blue items-center w-full bg-light-grayish-blue py-8 gap-8 xl:gap-6 border-t-4 border-t-youtube rounded-md">
+        <div class="flex gap-4">
+          <img class="w-[24px]" src="./images/icon-youtube.svg" alt="youtube icon">
+          <span class="text-dark-grayish-blue dark:text-desaturated-blue font-semibold">Nathan F.</span>
+        </div>
+        <div class="text-center">
+          <h1 class="text-6xl xs:text-7xl xl:text-6xl dark:text-white font-bold">8239</h1>
+          <span
+            class="tracking-widest xs:tracking-[0.325rem] xl:tracking-[0.2rem] text-xl xl:text-base font-light text-dark-grayish-blue dark:text-desaturated-blue">SUBSCRIBERS</span>
+        </div>
+        <div class="flex items-center gap-2">
+          <img class="w-3 h-1.5" src="./images/icon-down.svg" alt="down icon">
+          <span class="text-bright-red font-semibold">144 Today</span>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div>
+        <h1 class="text-2xl xs:text-3xl font-bold text-dark-grayish-blue dark:text-desaturated-blue">Overview - Today
+        </h1>
+      </div>
+      <div id="user-media-stats" class="grid md:grid-cols-2 xl:grid-cols-4 gap-4">
+        <div
+          class="bg-light-grayish-blue dark:hover:bg-heavy-dark-blue hover:bg-heavy-black cursor-pointer dark:bg-dark-desaturated-blue p-8 grid gap-8 xl:gap-6 mt-8 rounded-md">
+          <div class="flex justify-between">
+            <span class="font-semibold text-dark-grayish-blue dark:text-desaturated-blue">Page Views</span>
+            <img class="w-6" src="./images/icon-facebook.svg" alt="facebook icon">
+          </div>
+          <div class="flex justify-between">
+            <span class="text-4xl xs:text-5xl xl:text-4xl font-bold dark:text-white">87</span>
+            <div class="flex items-center gap-2">
+              <img class="w-3 h-1.5" src="./images/icon-up.svg" alt="up icon">
+              <span class="text-lime-green font-semibold">3%</span>
+            </div>
+          </div>
+        </div>
+        <div
+          class="bg-light-grayish-blue dark:hover:bg-heavy-dark-blue hover:bg-heavy-black cursor-pointer dark:bg-dark-desaturated-blue p-8 grid gap-8 xl:gap-6 mt-8 rounded-md">
+          <div class="flex justify-between">
+            <span class="font-semibold text-dark-grayish-blue dark:text-desaturated-blue">Likes</span>
+            <img class="w-6" src="./images/icon-facebook.svg" alt="facebook icon">
+          </div>
+          <div class="flex justify-between">
+            <span class="text-4xl xs:text-5xl xl:text-4xl font-bold dark:text-white">52</span>
+            <div class="flex items-center gap-2">
+              <img class="w-3 h-1.5" src="./images/icon-down.svg" alt="up icon">
+              <span class="text-bright-red font-semibold">3%</span>
+            </div>
+          </div>
+        </div>
+        <div
+          class="bg-light-grayish-blue dark:hover:bg-heavy-dark-blue hover:bg-heavy-black cursor-pointer dark:bg-dark-desaturated-blue p-8 grid gap-8 xl:gap-6 mt-8 rounded-md">
+          <div class="flex justify-between">
+            <span class="font-semibold text-dark-grayish-blue dark:text-desaturated-blue">Likes</span>
+            <img class="w-6" src="./images/icon-instagram.svg" alt="insicon-instagram.svg icon">
+          </div>
+          <div class="flex justify-between">
+            <span class="text-4xl xs:text-5xl xl:text-4xl font-bold dark:text-white">5462</span>
+            <div class="flex items-center gap-2">
+              <img class="w-3 h-1.5" src="./images/icon-up.svg" alt="up icon">
+              <span class="text-lime-green font-semibold">2257%</span>
+            </div>
+          </div>
+        </div>
+        <div
+          class="bg-light-grayish-blue dark:hover:bg-heavy-dark-blue hover:bg-heavy-black cursor-pointer dark:bg-dark-desaturated-blue p-8 grid gap-8 xl:gap-6 mt-8 rounded-md">
+          <div class="flex justify-between">
+            <span class="font-semibold text-dark-grayish-blue dark:text-desaturated-blue">Profile Views</span>
+            <img class="w-6" src="./images/icon-instagram.svg" alt="insicon-instagram.svg icon">
+          </div>
+          <div class="flex justify-between">
+            <span class="text-4xl xs:text-5xl xl:text-4xl font-bold dark:text-white">52k</span>
+            <div class="flex items-center gap-2">
+              <img class="w-3 h-1.5" src="./images/icon-up.svg" alt="up icon">
+              <span class="text-lime-green font-semibold">1375%</span>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="bg-light-grayish-blue dark:hover:bg-heavy-dark-blue hover:bg-heavy-black cursor-pointer dark:bg-dark-desaturated-blue p-8 grid gap-8 xl:gap-6 mt-8 rounded-md">
+          <div class="flex justify-between">
+            <span class="font-semibold text-dark-grayish-blue dark:text-desaturated-blue">Retweets</span>
+            <img class="w-6 h-[1.275rem]" src="./images/icon-twitter.svg" alt="twitter icon">
+          </div>
+          <div class="flex justify-between">
+            <span class="text-4xl xs:text-5xl xl:text-4xl font-bold dark:text-white">117</span>
+            <div class="flex items-center gap-2">
+              <img class="w-3 h-1.5" src="./images/icon-up.svg" alt="up icon">
+              <span class="text-lime-green font-semibold">303%</span>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="bg-light-grayish-blue dark:hover:bg-heavy-dark-blue hover:bg-heavy-black cursor-pointer dark:bg-dark-desaturated-blue p-8 grid gap-8 xl:gap-6 mt-8 rounded-md">
+          <div class="flex justify-between">
+            <span class="font-semibold text-dark-grayish-blue dark:text-desaturated-blue">Likes</span>
+            <img class="w-6 h-[1.275rem]" src="./images/icon-twitter.svg" alt="twitter icon">
+          </div>
+          <div class="flex justify-between">
+            <span class="text-4xl xs:text-5xl xl:text-4xl font-bold dark:text-white">507</span>
+            <div class="flex items-center gap-2">
+              <img class="w-3 h-1.5" src="./images/icon-up.svg" alt="up icon">
+              <span class="text-lime-green font-semibold">553%</span>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="bg-light-grayish-blue dark:hover:bg-heavy-dark-blue hover:bg-heavy-black cursor-pointer dark:bg-dark-desaturated-blue p-8 grid gap-8 xl:gap-6 mt-8 rounded-md">
+          <div class="flex justify-between">
+            <span class="font-semibold text-dark-grayish-blue dark:text-desaturated-blue">Likes</span>
+            <img class="w-6" src="./images/icon-youtube.svg" alt="youtube icon">
+          </div>
+          <div class="flex justify-between">
+            <span class="text-4xl xs:text-5xl xl:text-4xl font-bold dark:text-white">107</span>
+            <div class="flex items-center gap-2">
+              <img class="w-3 h-1.5" src="./images/icon-down.svg" alt="down icon">
+              <span class="text-bright-red font-semibold">19%</span>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="bg-light-grayish-blue dark:hover:bg-heavy-dark-blue hover:bg-heavy-black cursor-pointer dark:bg-dark-desaturated-blue p-8 grid gap-8 xl:gap-6 mt-8 rounded-md">
+          <div class="flex justify-between">
+            <span class="font-semibold text-dark-grayish-blue dark:text-desaturated-blue">Total Views</span>
+            <img class="w-6" src="./images/icon-youtube.svg" alt="youtube icon">
+          </div>
+          <div class="flex justify-between">
+            <span class="text-4xl xs:text-5xl xl:text-4xl font-bold dark:text-white">1407</span>
+            <div class="flex items-center gap-2">
+              <img class="w-3 h-1.5" src="./images/icon-down.svg" alt="down icon">
+              <span class="text-bright-red font-semibold">12%</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
